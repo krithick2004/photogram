@@ -37,11 +37,11 @@ function signup($username, $password, $email, $phone){
             $result = True;
         } else {
             $result = False;
-            
+            print ("Error: " . $sql . "<br>" . $conn->error);
         }
 
         $conn->close();
-        echo "Error: " . $sql . "<br>" . $conn->error;
+        
         return $result;
     }
 

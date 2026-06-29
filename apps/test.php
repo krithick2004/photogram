@@ -14,7 +14,7 @@
         print_r($_FILES);
         print("This is the cookie request:\n\n");
         print_r($_COOKIE); */
-
+        // print_r ($_POST);
         if (signup("krithick", "password124", "krithicka.s@gmail.com", "1234567890")) {
             echo "User created successfully";
         } else {
